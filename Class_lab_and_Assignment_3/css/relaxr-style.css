@@ -1,0 +1,235 @@
+/*
+Project Name: Relaxr landing page
+Client: Relaxr
+Author: Luke Degnan
+Developer @GA in NYC
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+body {
+  color: #063049;
+  font-size: 24px;
+  line-height: 1.4;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background-color: #f0efef
+}
+
+h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 800;
+  margin-left: 80px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: right;
+  color: #033048;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+h4 {
+  color: #f9e42e;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+h5 {
+  color: #033048;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+span {
+  color: #033048;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+ul img {
+  margin-top: 40px;
+}
+
+/* header*/
+
+header {
+  height: 120px;
+  background: #121212;
+  padding-top: 30px;
+  background-size: cover;
+}
+
+header h1 {
+  margin-right: 200px;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+header a {
+  color: yellow;
+}
+
+/* end header */
+
+/*link styles */
+
+a {
+  text-decoration: none;
+}
+
+#rightcolumn ul a {
+  color: #033048;
+}
+
+#leftcolumn h2 a {
+  color: #033048;
+}
+
+/* end link styles */
+
+p::first-letter {
+  color: black;
+  float: left;
+  font-size: 4em;
+  margin: 0 .2em 0 0;
+}
+
+aside {
+    background: #f9e42e;
+    padding: 30px;
+    text-align: center
+}
+
+/* footer */
+
+footer {
+    background: #121212;
+    padding: 65px 0 45px;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 26px 75px;
+}
+
+footer p {
+  font-size: 9px;
+  color: white;
+  font-weight: 600;
+}
+
+/* end footer */
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+#wrapper {
+     width: 100%;    
+     margin: 0 auto;
+}
+
+#leftcolumn {
+    float: left;
+    width: 700px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+#rightcolumn {
+    width: 240px;
+    float: left;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+} 
+
+.flex-item {
+    width: 100%;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.button-blue {
+    background: #033048;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 10px 0;
+    width: 300px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
