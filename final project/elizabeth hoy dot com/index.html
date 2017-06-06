@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Elizabeth Hoy">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Elizabeth Hoy</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+    <div id="wrapper">
+      <header class="header">
+        <a href="#" class="elizabeth"><h1>elizabeth hoy</h1></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#s1" onclick="test('s1'); return false;">painting</a></li>
+          <li><a href="#s2" onclick="test('s2'); return false;">sculpture</a></li>
+          <li><a href="#s3" onclick="test('s3'); return false;">about</a></li>
+        </ul>
+        <hr>
+      </header>
+      <section id="content">
+        <div id="hero">
+          <img src="images/artwork/cover-image.jpg">
+        </div>
+        <div id="s1">
+          <h2>painting</h2>
+          <hr>
+          <div id="imagegrid">
+                <a>
+                  <figure>
+                    <img src="images/artwork/1.jpg" onclick="openModal();currentSlide(1)">
+                    <figcaption>
+                        <h6><em>It was always tonight</em>, 2016, oil on panel, 24 x 24 in.</h6>
+                    </figcaption>
+                  </figure>
+                </a>
+                <a>
+                  <figure>
+                    <img src="images/artwork/2.jpg" onclick="openModal();currentSlide(2)">
+                    <figcaption>
+                        <h6><em>Camouflaged &amp; capable</em>, 2016, oil on panel, 24 x 24 in.</h6>
+                    </figcaption>
+                  </figure>
+                </a>
+                <a>
+                  <figure>
+                    <img src="images/artwork/3.jpg" onclick="openModal();currentSlide(3)">
+                    <figcaption>
+                        <h6><em>With edges</em>, 2016, oil on panel, 24 x 24 in.</h6> 
+                    </figcaption>
+                  </figure>
+                </a>
+                <a>
+                  <figure>
+                    <img src="images/artwork/4.jpg" onclick="openModal();currentSlide(4)">
+                    <figcaption>
+                        <h6><em>Nocturne whatever</em>, 2016, oil on panel, 24 x 24 in.</h6>
+                    </figcaption>
+                  </figure>
+                </a>
+                <a>
+                  <figure>
+                    <img src="images/artwork/5.jpg" onclick="openModal();currentSlide(5)">
+                    <figcaption>
+                        <h6><em>Gray face of the sea</em>, 2016, oil on panel, 24 x 24 in.</h6>
+                    </figcaption>
+                  </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/6.jpg" onclick="openModal();currentSlide(6)">
+                    <figcaption>
+                        <h6><em>Eliptical plot</em>, 2016, oil on panel, 24 x 24 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/7.jpg" onclick="openModal();currentSlide(7)">
+                    <figcaption>
+                        <h6><em>Beyond count</em>, 2016, oil on panel, 24 x 24 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/8.jpg" onclick="openModal();currentSlide(8)">
+                    <figcaption>
+                        <h6><em>A constituent of beaches</em>, 2016, oil on panel, 24 x 24 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+            </div>
+            <div id="imagegrid">
+                <a>
+                 <figure>
+                    <img src="images/artwork/17.jpg" onclick="openModal();currentSlide(9)">
+                    <figcaption>
+                        <h6><em>Establishing</em>, 2016, oil on panel, 12 x 36 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/18.jpg" onclick="openModal();currentSlide(10)">
+                    <figcaption>
+                        <h6><em>Goose falls</em>, 2016, oil on panel, 12 x 12 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/19.jpg" onclick="openModal();currentSlide(11)">
+                    <figcaption>
+                        <h6><em>Island body</em>, 2016, oil on panel, 24 x 36 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/20.jpg" onclick="openModal();currentSlide(12)">
+                    <figcaption>
+                        <h6><em>It looks like this</em>, 2016, oil on panel, 24 x 48 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/21.jpg" onclick="openModal();currentSlide(13)">
+                    <figcaption>
+                        <h6><em>Put em up</em>, 2016, oil on panel, 24 x 48 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/22.jpg" onclick="openModal();currentSlide(14)">
+                    <figcaption>
+                        <h6><em>Same place</em>, 2016, oil on panel, 12 x 12 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/23.jpg" onclick="openModal();currentSlide(15)">
+                    <figcaption>
+                        <h6><em>The celestial, neutral</em>, 2016, oil on panel, 24 x 36 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/24.jpg" onclick="openModal();currentSlide(16)">
+                    <figcaption>
+                        <h6><em>Invent a second island</em>, 2016, oil on panel, 24 x 36 in.</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+              </div>
+
+            </div>
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+                <div class="mySlides">
+                  <div class="captionslide"><em>It was always tonight</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 24 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/1.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Camouflaged &amp; capable</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 24 in.</div>
+                  <div class="slideImage" align="center">  
+                    <img src="images/artwork/fullsized/2.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>With edges</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 24 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/3.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Nocturne whatever</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 24 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/4.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Gray face of the sea</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 24 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/5.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Eliptical plot</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 24 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/6.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Beyond count</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 24 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/7.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>A constituent of beaches</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 24 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/8.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Establishing</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    12 x 36 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/17.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Goose falls</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    12 x 12 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/18.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Island body</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 36 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/19-full.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>It looks like this</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 48 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/20-full.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Put em up</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 48 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/21-full.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Same place</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    12 x 12 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/22-full.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>The celestial, neutral</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 36 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/23-full.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Invent a second island</em><br />
+                    2016<br />
+                    oil on panel<br />
+                    24 x 36 in.</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/24-full.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Preliminary Assessment</em><br />
+                    2017<br />
+                    mixed media<br />
+                    dimensions variable</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/9.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>The bed and the church</em><br />
+                    2015<br />
+                    mixed media<br />
+                    dimensions variable</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/10.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Two</em><br />
+                    2012<br />
+                    mixed media<br />
+                    dimensions variable</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/11.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Sweetheart Deals</em><br />
+                    2017<br />
+                    mixed media<br />
+                    dimensions variable</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/12.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>National Priorities</em><br />
+                    2017<br />
+                    mixed media<br />
+                    dimensions variable</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/13.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>The Curve</em><br />
+                    2015<br />
+                    mixed media<br />
+                    dimensions variable</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/14.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Everything's On</em><br />
+                    2012<br />
+                    mixed media<br />
+                    dimensions variable</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/15.jpg" alt="title">
+                  </div>
+                </div>
+                <div class="mySlides">
+                  <div class="captionslide"><em>Potential Threats</em><br />
+                    2017<br />
+                    mixed media<br />
+                    dimensions variable</div>
+                  <div class="slideImage" align="center">
+                    <img src="images/artwork/fullsized/16.jpg" alt="title">
+                  </div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              </div>
+            </div>
+      </section>
+    </div>
+  <section>
+    <div id="s2">
+      <h2>sculpture</h2>
+      <hr>
+      <div id="imagegrid">
+                <a>
+                  <figure>
+                    <img src="images/artwork/9.jpg" onclick="openModal();currentSlide(17)">
+                    <figcaption>
+                        <h6><em>Preliminary Assessment</em>, 2017</h6>
+                    </figcaption>
+                  </figure>
+                </a>
+                <a>
+                  <figure>
+                    <img src="images/artwork/10.jpg" onclick="openModal();currentSlide(18)">
+                    <figcaption>
+                        <h6><em>The bed and the church</em>, 2015</h6>
+                    </figcaption>
+                  </figure>
+                </a>
+ 
+                <a>
+                  <figure>
+                    <img src="images/artwork/11.jpg" onclick="openModal();currentSlide(19)">
+                    <figcaption>
+                        <h6><em>Two</em>, 2012</h6>          
+                    </figcaption>
+                  </figure>
+                </a>
+  
+                <a>
+                  <figure>
+                    <img src="images/artwork/12.jpg" onclick="openModal();currentSlide(20)">
+                    <figcaption>
+                        <h6><em>Sweetheart Deals</em>, 2017</h6>
+                    </figcaption>
+                  </figure>
+                </a>
+
+                <a>
+                  <figure>
+                    <img src="images/artwork/13.jpg" onclick="openModal();currentSlide(21)">
+                    <figcaption>
+                        <h6><em>National Priorities</em>, 2017</h6>
+                    </figcaption>
+                  </figure>
+                </a>
+  
+                <a>
+                 <figure>
+                    <img src="images/artwork/14.jpg" onclick="openModal();currentSlide(22)">
+                    <figcaption>
+                        <h6><em>The Curve</em>, 2015</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/15.jpg" onclick="openModal();currentSlide(23)">
+                    <figcaption>
+                        <h6><em>Everything's On</em>, 2012</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+                <a>
+                 <figure>
+                    <img src="images/artwork/16.jpg" onclick="openModal();currentSlide(24)">
+                    <figcaption>
+                        <h6><em>Potential Threats</em>, 2017</h6>
+                    </figcaption>
+                 </figure>
+                </a>
+              </div>
+            </div>
+           
+      </section>
+    </div>
+    <div id="s3">
+      <h2>about</h2>
+      <hr>
+      <div id="resume">
+        <p class="lizemail"><strong>ebhoy1 (at) gmail (dot) com</strong></p><br />
+        <strong>EDUCATION</strong><br />
+        <span class="dates">2009</span> MFA, UNIVERSITY of PENNSYLVANIA, Philadelphia, PA<br />
+        <span class="dates">2003</span> BA with Honors, WESLEYAN UNIVERSITY, Middletown, CT<br /><br />
+        <strong>SELECTED ONE AND TWO PERSON EXHIBITIONS</strong><br />
+        <span class="dates">2017</span> <em>Elizabeth Hoy: Color Field Landscapes</em>, Sam Shaw, Northeast Harbor, ME<br />
+        <span class="dates">2017</span> <em>Why does it end here?</em>, A.I.R. Gallery, Brooklyn, NY <br />
+        <span class="dates">2016</span> <em>It looks like this</em>, Portland Art Gallery, Portland, ME <br />
+        <span class="dates">2004</span> <em>New Paintings</em>, Northampton Center for the Arts, Northampton, MA<br /><br />
+        <strong>SELECTED GROUP EXHIBITIONS</strong><br />
+        <span class="dates">2017</span><br/>
+        <em>Jon Imber and Friends</em>, G. Watson Gallery, Stonington, ME <br />
+        <em>Taken on Trust</em>, A.I.R. Gallery Governors Island, New York, NY<br />
+        <em>Making in Place</em>, Schuylkill Center for Environmental Education, Philadelphia, PA<br />
+        <em>Stonington Painters Group</em>, RiverSea Gallery, Dover, NH<br />
+        <em>20 x 20 x 20</em>, Overhang Gallery, Brooklyn, NY<br />
+        <em>Abstract</em>, Greenhut Gallery, Portland, ME<br />
+        <span class="dates">2016</span><br/> 
+        <em>Portal Art Fair</em>, New York, NY<br />
+        <em>Art in the Open</em>, Philadelphia, PA<br />
+        <em>New Grounds</em>, International Institute for Contemporary Art and Theory, Mangalia, Romania<br />
+        <span class="dates">2015</span><br/> 
+        <em>Artists de L’été</em>, LeCouveNt, Auzits, France<br />
+        <em>Winter Workspace Open Studio</em>, Wave Hill, Bronx, NY<br />
+        <em>Group Show, G. Watson Gallery</em>, Stonington, ME<br />
+        <span class="dates">2014</span><br/> 
+        <em>NURTUREart Benefit</em>, The Boiler, Brooklyn, NY<br />
+        <em>Governors Island Art Fair</em>, New York, NY<br />
+        <em>Art to Collect NOW</em>, Center for Maine Contemporary Art, Rockport, ME<br />
+        <em>American Painters</em>, Abbey Saint-Magloire, Lehon, France<br />
+        <em>Four Painters</em>, Center for Maine Contemporary Art, Rockport, ME<br />
+        <em>Game Show</em>, Fowler Project Space, Brooklyn, NY<br />
+        <span class="dates">2013</span><br/> 
+        <em>Governors Island Art Fair</em>, New York, NY<br />
+        <em>Bronx Calling: AIM Biennial</em>, Wave Hill, Bronx, NY<br />
+        <em>NURTUREart Benefit</em>, Bernarducci Meisel Gallery, NY<br />
+        <span class="dates">2012</span><br/> 
+        <em>The 10th Biennial, A.I.R. Gallery</em>, Brooklyn, NY<br />
+        <em>Small Works</em>, Jeffrey Leder Gallery, Long Island City, NY<br />
+        <em>Natural/Constructed Spaces</em>, The Painting Center, New York, NY<br />
+        <em>Works on Paper NYC</em>, Jeffrey Leder Gallery, Long Island City, NY<br />
+        <span class="dates">2011</span><br/>
+        <em>The Pinch</em>, Fowler Arts Collective, Brooklyn, NY<br />
+        <em>Governors Island Art Fair</em>, Governors Island, New York, NY<br />
+        <span class="dates">2010</span><br/> 
+        <em>Sixth Annual Small Works Show</em>, Gallery 440, Brooklyn, NY<br />
+        <em>Enter</em>, Fowler Arts Collective, Brooklyn, NY<br />
+        <em>Close Up</em>, Trestle Gallery/Brooklyn Artists Gym, Brooklyn, NY<br />
+        <em>Governors Island Art Fair</em>, Governors Island, New York, NY<br />
+        <em>Collective</em>, Galatea Fine Art, Boston, MA<br />
+        <em>Subject to Change</em>, Ox Gallery, Philadelphia, PA<br />
+        <span class="dates">2009</span><br/> 
+        <em>MFA Biennial, Rule 10 for the MFA 5</em>, Delaware Center for the Contemporary Arts, Wilmington, DE<br />
+        <em>Where there’s smoke, there’s smoke</em>, Michael Steinberg Fine Art, New York, NY<br />
+        <em>After the Pedestal</em>, Sculpture Center, Cleveland, OH<br />
+        <em>East West South North</em>, Charles Addams Gallery, Philadelphia, PA<br />
+        <em>University of Pennsylvania MFA Thesis</em>, Ice Box Project Space, Philadelphia, PA<br />
+        <span class="dates">2008</span><br/>
+        <em>Identity</em>, Meyerson Gallery, Philadelphia, PA<br />
+        <em>Invisible Man</em>, Meyerson Gallery, Philadelphia, PA<br />
+        <span class="dates">2007</span><br/> 
+        <em>First Year Exhibition</em>, Meyerson Gallery, Philadelphia, PA<br />
+        <em>2007 Chelsea International</em>, Agora Gallery, New York, NY<br />
+        <em>12x12x12</em>, Trestle Gallery/Brooklyn Artists Gym, Brooklyn, NY<br />
+        <em>National Juried Exhibition</em>, Prince Street Gallery, New York, NY<br />
+        <span class="dates">2006</span><br/> 
+        <em>BAG</em>, John Ryan Theater, Brooklyn, NY<br />
+        <em>Small Works</em>, Trestle Gallery/Brooklyn Artists Gym, Brooklyn, NY<br />
+        <span class="dates">2005</span><br/>
+        <em>Winter</em>, Expo Gallery, Brooklyn, NY<br />
+        <em>South Shore Artists</em>, Cordage Park Gallery, Plymouth, MA<br />
+        <span class="dates">2004</span><br/> 
+        Pembroke Arts Festival, Pembroke, MA<br /><br />
+<strong>RESIDENCIES/FELLOWSHIPS</strong><br />
+<span class="resdates">August 2017</span> Maine Farmland Trust Residency Grant, Jefferson, ME<br />
+<span class="resdates">January 2017</span> Vermont Studio Center, Artist Grant, Johnson, VT<br />
+<span class="resdates">2016-2017</span> A.I.R. Gallery Fellow, Brooklyn, NY<br />
+<span class="resdates">Summer 2015</span> Le CouveNt Artist Residency Grant, Auzits, France<br />
+<span class="resdates">2015 Winter</span> Workspace Program, Wave Hill, Bronx, NY<br />
+<span class="resdates">Summer 2014</span> The Alfred and Trafford Klots International Program for Artists, Brittany, France<br />
+<span class="resdates">2012-2013</span> Artist in the Marketplace (AIM), Bronx Museum, NY<br />
+<span class="resdates">July 2006-2013</span> Stonington Painters Workshop, Stonington, ME<br />
+<span class="resdates">Summer 2011</span> 4 Heads Governors Island Studio Residency, New York Harbor, NY<br />
+<span class="resdates">2010-2011</span> Chashama Studio Residency Program, Brooklyn, NY<br />
+<span class="resdates">2009</span> Howard Silverstein Photo Studio: Beijing, China<br />
+<span class="resdates">Summer 2008</span> Royal College of Art Travel Fellowship, London, UK<br /><br />
+<strong>AWARDS/GRANTS</strong><br />
+<span class="resdates">2009</span> Nominee for the 2009 Joan Mitchell MFA Grant<br />
+<span class="resdates">2007-2009</span> Chair’s Merit Grant, University of Pennsylvania<br />
+<span class="resdates">2007</span> PCE Grant, Philanthropic Educational Organization International<br /><br />
+<strong>BIBLIOGRAPHY/PRESS</strong><br />
+Noelani Kirschner, &ldquo;Portrait of the Artist, Elizabeth Hoy: Polluted Waterways,&rdquo; <em>The American Scholar</em>, April 17, 2017<br />
+&ldquo;Artist List,&rdquo; <em>MAINE HOME + DESIGN</em>, Spring 2017<br /> 
+Erik Eisele, &ldquo;Gift Local,&rdquo; <em>PORTLAND PHOENIX</em>, December, 2016 <br />
+Leora Fridman, &ldquo;Notes on Abandon,&rdquo; <em>TRICYCLE</em>, Fall 2016 <br />
+Susan Axelrod, &ldquo;Ones to Watch,&rdquo; <em>MAINE HOME + DESIGN</em>, September 2016<br />
+Christine Valat, &ldquo;La Trilogie De L’été: Le Couvent,&rdquo; <em>LA VILLE EN ROSE</em>, August 2015<br />
+&ldquo;Diffusions,&rdquo; interview with RADIO TEMPS RODEZ, France, July 2015<br />
+David Xu Borgonjon, &ldquo;Shifting Perspectives: An interview with Elizabeth Hoy,&rdquo; <em>WAVE HILL BLOG</em>, March 2015<br />
+&ldquo;Artist Portfolio,&rdquo; <em>NO TOKENS</em>, Issue II, November 2014<br />
+&ldquo;Huit Américains à l'abbaye,&rdquo; <em>LE TELEGRAMME</em>, July 2014<br />
+Sharon Andarlo, &ldquo;Greenpoint Gallery Night: A Laid-Back Antidote to Frieze,&rdquo; <em>HYPERALLERGIC</em>, May 2014<br />
+&ldquo;Goings On About Town,&rdquo; <em>THE NEW YORKER</em>, January 2013<br />
+Jillian Steinhauer, &ldquo;Art Rx,&rdquo; <em>HYPERALLERGIC</em>, December 2012<br />
+Whitney Kimball, &ldquo;This Week’s Art Events,&rdquo; <em>THE L MAGAZINE</em>, December 2012<br />
+&ldquo;Art Rx,&rdquo; <em>HYPERALLERGIC</em>, October 2011<br />
+&ldquo;Featured artist,&rdquo; <em>BOMB DAILY</em>, <em>BOMB MAGAZINE</em>, April 9, 2010<br />
+Roberta Fallon and Libby Rosof, &ldquo;Student post, Part 2,&rdquo; <em>THE ART BLOG</em>, June 10, 2009<br />
+Victoria Donohoe, &ldquo;Penn students display photos from China,&rdquo; <em>THE PHILADELPHIA INQUIRER</em>, June 4, 2009<br />
+<em>Life in Boxes: Comic Art &amp; Artifacts, An exhibition selected from the Steven Rothman Collection of Comics,
+Cartoons, &amp; Graphic Novels, Rare Book &amp; Manuscript Library</em>, University of Pennsylvania, p.25, 2009.
+          </p>
+    </div>
+  </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/menuslide.js" type="text/javascript"></script>
+    <script src="js/modal.js" type="text/javascript"></script>
+</body>
+</html>
